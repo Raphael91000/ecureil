@@ -1,4 +1,4 @@
-import { ChevronDown, Phone, Calendar } from 'lucide-react';
+import { ChevronDown, Phone, Calendar, Star } from 'lucide-react';
 
 export default function Hero() {
   const scrollTo = (id: string) => {
@@ -9,76 +9,93 @@ export default function Hero() {
   return (
     <section
       id="hero"
-      className="relative min-h-screen flex items-center justify-center overflow-hidden section-dark"
+      className="relative min-h-screen flex items-center overflow-hidden section-dark"
     >
-      {/* Background image */}
-      <div
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{
-          backgroundImage:
-            'url(https://images.pexels.com/photos/1034662/pexels-photo-1034662.jpeg?auto=compress&cs=tinysrgb&w=1920)',
-        }}
-      />
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-dark/75" />
+      {/* Subtle gradient accent */}
+      <div className="absolute top-0 right-0 w-[600px] h-[600px] bg-accent/5 rounded-full blur-3xl pointer-events-none" />
 
-      {/* Decorative lines */}
-      <div className="absolute left-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-accent/30 to-transparent ml-12 hidden lg:block" />
-      <div className="absolute right-0 top-0 h-full w-px bg-gradient-to-b from-transparent via-accent/30 to-transparent mr-12 hidden lg:block" />
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-6 lg:px-12 py-32 grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        {/* Left: text */}
+        <div className="flex flex-col items-start">
+          <div className="inline-flex items-center gap-2 border border-accent/30 rounded-full px-4 py-1.5 mb-8 bg-accent/5">
+            <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
+            <span className="font-body text-xs font-semibold text-accent tracking-[0.2em] uppercase">
+              Paysagiste professionnel — Limousin
+            </span>
+          </div>
 
-      <div className="relative z-10 max-w-5xl mx-auto px-6 text-center">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 border border-accent/40 rounded-full px-5 py-2 mb-8 bg-accent/10">
-          <span className="w-1.5 h-1.5 rounded-full bg-accent animate-pulse" />
-          <span className="font-body text-xs font-semibold text-accent tracking-[0.2em] uppercase">
-            Paysagiste professionnel — Limousin
-          </span>
+          <h1 className="font-heading text-5xl sm:text-6xl lg:text-7xl font-bold text-accent leading-[1.05] mb-6">
+            L'art de{' '}
+            <span className="italic font-light">façonner</span>
+            <br />
+            votre nature
+          </h1>
+
+          <p className="font-body text-base text-light/60 mb-3 leading-relaxed max-w-md">
+            Élagage, abattage, taille de haies et entretien de jardins.
+            Ecureil Elagage sublime vos espaces verts avec expertise et passion.
+          </p>
+
+          <p className="font-body text-xs text-accent/40 mb-10 tracking-widest uppercase">
+            Traspont · 87240 Saint-Laurent-les-Églises · Lun–Ven 8h–18h
+          </p>
+
+          <div className="flex flex-col sm:flex-row items-start gap-3">
+            <a
+              href="tel:+33664825814"
+              className="flex items-center gap-2.5 bg-accent text-dark px-7 py-3.5 rounded-full font-body font-semibold text-sm hover:bg-light transition-all duration-200 hover:scale-105"
+            >
+              <Phone size={15} />
+              +33 6 64 82 58 14
+            </a>
+            <button
+              onClick={() => scrollTo('#contact')}
+              className="flex items-center gap-2.5 border border-accent/40 text-accent px-7 py-3.5 rounded-full font-body font-semibold text-sm hover:bg-accent/10 transition-all duration-200"
+            >
+              <Calendar size={15} />
+              Demander un devis
+            </button>
+          </div>
         </div>
 
-        {/* Main heading */}
-        <h1 className="font-heading text-6xl sm:text-7xl lg:text-8xl font-bold text-accent leading-tight mb-6">
-          L'art de{' '}
-          <span className="italic font-light">façonner</span>
-          <br />
-          votre nature
-        </h1>
-
-        <p className="font-body text-lg sm:text-xl text-light/80 max-w-2xl mx-auto mb-4 leading-relaxed font-300">
-          Élagage, abattage, taille de haies et entretien de jardins. Depuis des
-          années, Ecureil Elagage sublime vos espaces verts avec expertise et passion.
-        </p>
-
-        <p className="font-body text-sm text-accent/70 mb-12 tracking-widest uppercase">
-          Traspont, 87240 Saint-Laurent-les-Églises &nbsp;·&nbsp; Lun–Ven 8h–18h
-        </p>
-
-        {/* CTAs */}
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <a
-            href="tel:+33664825814"
-            className="flex items-center gap-3 bg-accent text-dark px-8 py-4 rounded-full font-body font-semibold text-base hover:bg-light transition-all duration-300 hover:scale-105 shadow-lg shadow-accent/20"
-          >
-            <Phone size={18} />
-            +33 6 64 82 58 14
-          </a>
-          <button
-            onClick={() => scrollTo('#contact')}
-            className="flex items-center gap-3 border border-accent/60 text-accent px-8 py-4 rounded-full font-body font-semibold text-base hover:bg-accent/10 transition-all duration-300"
-          >
-            <Calendar size={18} />
-            Demander un devis
-          </button>
+        {/* Right: image card */}
+        <div className="flex justify-center lg:justify-end">
+          <div className="relative w-full max-w-[360px]">
+            <div className="absolute -inset-px rounded-2xl bg-gradient-to-br from-accent/30 to-transparent" />
+            <div className="relative rounded-2xl overflow-hidden bg-dark">
+              <img
+                src="/ok.jpeg"
+                alt="Ecureil Elagage — travaux paysagers"
+                className="w-full h-[400px] object-cover opacity-90"
+              />
+              <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-dark/95 via-dark/50 to-transparent px-5 py-5">
+                <div className="flex items-center justify-between">
+                  <div>
+                    <p className="font-heading text-accent font-semibold text-base leading-tight">Ecureil Élagage</p>
+                    <p className="font-body text-light/40 text-xs mt-0.5">Artisan paysagiste certifié</p>
+                  </div>
+                  <div className="flex items-center gap-0.5">
+                    {[...Array(5)].map((_, i) => (
+                      <Star key={i} size={11} className="fill-accent text-accent" />
+                    ))}
+                  </div>
+                </div>
+              </div>
+              <div className="absolute top-3 left-3 bg-accent text-dark text-[10px] font-body font-bold px-3 py-1 rounded-full uppercase tracking-wider">
+                Expertise locale
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
-      {/* Scroll indicator */}
       <button
         onClick={() => scrollTo('#stats')}
-        className="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 text-accent/50 hover:text-accent transition-colors animate-bounce"
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-1.5 text-accent/30 hover:text-accent/60 transition-colors animate-bounce"
         aria-label="Défiler"
       >
-        <span className="font-body text-xs tracking-widest uppercase">Découvrir</span>
-        <ChevronDown size={20} />
+        <span className="font-body text-[10px] tracking-widest uppercase">Découvrir</span>
+        <ChevronDown size={16} />
       </button>
     </section>
   );

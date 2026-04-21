@@ -109,22 +109,25 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Map placeholder */}
-            <div className="rounded-2xl overflow-hidden border border-accent/15 h-56 relative">
-              <iframe
-                title="Localisation Ecureil Elagage"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=1.4%2C45.9%2C1.7%2C46.05&amp;layer=mapnik"
-                className="w-full h-full"
-                style={{ filter: 'grayscale(100%) brightness(0.4) sepia(20%)' }}
-              />
-              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                <div className="bg-dark/80 border border-accent/30 rounded-xl px-5 py-3 text-center">
-                  <MapPin size={20} className="text-accent mx-auto mb-1" />
-                  <p className="font-body text-xs text-accent font-semibold">Traspont, 87240</p>
-                  <p className="font-body text-xs text-light/60">Saint-Laurent-les-Églises</p>
-                </div>
+            {/* Google fiche */}
+            <a
+              href="https://www.google.com/maps/place/ECUREUIL+ELAG/@45.990789,1.452319,17z/data=!3m1!4b1!4m6!3m5!1s0x47f945b5766e1eed:0x6209f358cd77bed9!8m2!3d45.990789!4d1.452319!16s%2Fg%2F1tvw48yh?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-4 rounded-2xl border border-accent/15 bg-white/5 px-6 py-5 hover:border-accent/40 hover:bg-accent/5 transition-all duration-200 group"
+            >
+              <div className="w-12 h-12 rounded-xl bg-accent/15 border border-accent/30 flex items-center justify-center flex-shrink-0 group-hover:bg-accent/25 transition-colors">
+                <MapPin size={20} className="text-accent" />
               </div>
-            </div>
+              <div className="flex-1">
+                <p className="font-body text-xs text-light/50 uppercase tracking-wider mb-0.5">Fiche Google</p>
+                <p className="font-body font-semibold text-accent text-sm">Voir notre fiche Google Maps</p>
+                <p className="font-body text-xs text-light/40">Avis clients · Itinéraire · Horaires</p>
+              </div>
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-accent/40 group-hover:text-accent transition-colors flex-shrink-0">
+                <path d="M7 7h10v10"/><path d="M7 17 17 7"/>
+              </svg>
+            </a>
           </div>
 
           {/* Form */}

@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Phone, Menu, X, Scissors } from 'lucide-react';
+import { Phone, Menu, X } from 'lucide-react';
 
 const navLinks = [
   { label: 'Services', href: '#services' },
@@ -39,9 +39,7 @@ export default function Header() {
           onClick={(e) => handleNavClick(e, '#hero')}
           className="flex items-center gap-3 group"
         >
-          <div className="w-9 h-9 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center group-hover:bg-accent/30 transition-colors">
-            <Scissors size={16} className="text-accent" />
-          </div>
+          <span className="text-2xl select-none">🐿️</span>
           <span className="font-heading text-xl font-semibold text-accent tracking-wide">
             Ecureil Elagage
           </span>

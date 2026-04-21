@@ -1,4 +1,4 @@
-import { Phone, MapPin, Clock, Scissors } from 'lucide-react';
+import { Phone, MapPin, Clock } from 'lucide-react';
 
 const navLinks = [
   { label: 'Services', href: '#services' },
@@ -30,9 +30,7 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <div className="w-9 h-9 rounded-full bg-accent/20 border border-accent/40 flex items-center justify-center">
-                <Scissors size={16} className="text-accent" />
-              </div>
+              <span className="text-2xl select-none">🐿️</span>
               <span className="font-heading text-lg font-semibold text-accent">
                 Ecureil Elagage
               </span>

@@ -7,6 +7,7 @@ import Reviews from './components/Reviews';
 import FAQ from './components/FAQ';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Wave from './components/Wave';
 
 export default function App() {
   return (
@@ -14,11 +15,17 @@ export default function App() {
       <Header />
       <main>
         <Hero />
+        <Wave from="dark" />
         <Stats />
+        <Wave from="light" flip />
         <Services />
+        <Wave from="dark" />
         <Process />
+        <Wave from="light" flip />
         <Reviews />
+        <Wave from="dark" />
         <FAQ />
+        <Wave from="light" flip />
         <Contact />
       </main>
       <Footer />
