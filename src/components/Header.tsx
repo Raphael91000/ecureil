@@ -39,9 +39,8 @@ export default function Header() {
           onClick={(e) => handleNavClick(e, '#hero')}
           className="flex items-center gap-3 group"
         >
-          <span className="text-2xl select-none">🐿️</span>
           <span className="font-heading text-xl font-semibold text-accent tracking-wide">
-            Ecureil Elagage
+            Gaetan espaces verts
           </span>
         </a>
 
@@ -61,11 +60,11 @@ export default function Header() {
 
         {/* Phone CTA */}
         <a
-          href="tel:+33664825814"
+          href="tel:+33661006092"
           className="hidden lg:flex items-center gap-2 bg-accent text-dark px-5 py-2.5 rounded-full font-body text-sm font-600 hover:bg-light transition-colors"
         >
           <Phone size={14} />
-          <span className="font-semibold">+33 6 64 82 58 14</span>
+          <span className="font-semibold">+33 6 61 00 60 92</span>
         </a>
 
         {/* Mobile toggle */}
@@ -96,11 +95,11 @@ export default function Header() {
             </a>
           ))}
           <a
-            href="tel:+33664825814"
+            href="tel:+33661006092"
             className="flex items-center gap-2 text-accent font-semibold font-body text-sm mt-2"
           >
             <Phone size={14} />
-            +33 6 64 82 58 14
+            +33 6 61 00 60 92
           </a>
         </div>
       </div>

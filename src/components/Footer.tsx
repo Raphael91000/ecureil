@@ -30,20 +30,19 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <div className="flex items-center gap-3 mb-5">
-              <span className="text-2xl select-none">🐿️</span>
               <span className="font-heading text-lg font-semibold text-accent">
-                Ecureil Elagage
+                Gaetan espaces verts
               </span>
             </div>
             <p className="font-body text-sm text-light/50 leading-relaxed mb-6">
-              Paysagiste professionnel en Haute-Vienne. Élagage, abattage, taille et entretien de jardins avec soin et expertise.
+              Paysagiste professionnel en Normandie. Élagage, abattage, taille et entretien de jardins avec soin et expertise.
             </p>
             <a
-              href="tel:+33664825814"
+              href="tel:+33661006092"
               className="inline-flex items-center gap-2 text-accent font-body font-semibold text-sm hover:text-light transition-colors"
             >
               <Phone size={14} />
-              +33 6 64 82 58 14
+              +33 6 61 00 60 92
             </a>
           </div>
 
@@ -89,8 +88,8 @@ export default function Footer() {
               <div className="flex items-start gap-3">
                 <MapPin size={14} className="text-accent mt-0.5 flex-shrink-0" />
                 <div>
-                  <p className="font-body text-sm text-light/70">Traspont</p>
-                  <p className="font-body text-sm text-light/50">87240 Saint-Laurent-les-Églises</p>
+                  <p className="font-body text-sm text-light/70">32 La Grande Rue</p>
+                  <p className="font-body text-sm text-light/50">27800 Boisney</p>
                   <p className="font-body text-sm text-light/50">France</p>
                 </div>
               </div>
@@ -98,7 +97,7 @@ export default function Footer() {
                 <Clock size={14} className="text-accent mt-0.5 flex-shrink-0" />
                 <div>
                   <p className="font-body text-sm text-light/70">Lundi – Vendredi</p>
-                  <p className="font-body text-sm text-light/50">8h00 – 18h00</p>
+                  <p className="font-body text-sm text-light/50">9h00 – 17h00</p>
                 </div>
               </div>
             </div>
@@ -108,10 +107,10 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="pt-8 border-t border-accent/10 flex flex-col sm:flex-row items-center justify-between gap-4">
           <p className="font-body text-xs text-light/30">
-            © {new Date().getFullYear()} Ecureil Elagage. Tous droits réservés.
+            © {new Date().getFullYear()} Gaetan espaces verts. Tous droits réservés.
           </p>
           <p className="font-body text-xs text-light/30">
-            Traspont, 87240 Saint-Laurent-les-Églises
+            32 La Grande Rue, 27800 Boisney
           </p>
         </div>
       </div>

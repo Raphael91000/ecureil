@@ -73,7 +73,7 @@ export default function Contact() {
               </h3>
               <div className="space-y-5">
                 <a
-                  href="tel:+33664825814"
+                  href="tel:+33661006092"
                   className="flex items-center gap-5 group"
                 >
                   <div className="w-12 h-12 rounded-full bg-accent/15 border border-accent/30 flex items-center justify-center group-hover:bg-accent/25 transition-colors flex-shrink-0">
@@ -81,7 +81,7 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-body text-xs text-light/50 uppercase tracking-wider mb-0.5">Téléphone</p>
-                    <p className="font-body font-semibold text-accent">+33 6 64 82 58 14</p>
+                    <p className="font-body font-semibold text-accent">+33 6 61 00 60 92</p>
                   </div>
                 </a>
 
@@ -91,8 +91,8 @@ export default function Contact() {
                   </div>
                   <div>
                     <p className="font-body text-xs text-light/50 uppercase tracking-wider mb-0.5">Adresse</p>
-                    <p className="font-body font-semibold text-light/80">Traspont</p>
-                    <p className="font-body text-sm text-light/60">87240 Saint-Laurent-les-Églises, France</p>
+                    <p className="font-body font-semibold text-light/80">32 La Grande Rue</p>
+                    <p className="font-body text-sm text-light/60">27800 Boisney, France</p>
                   </div>
                 </div>
 
@@ -103,7 +103,7 @@ export default function Contact() {
                   <div>
                     <p className="font-body text-xs text-light/50 uppercase tracking-wider mb-0.5">Horaires</p>
                     <p className="font-body font-semibold text-light/80">Lundi – Vendredi</p>
-                    <p className="font-body text-sm text-light/60">8h00 – 18h00</p>
+                    <p className="font-body text-sm text-light/60">9h00 – 17h00</p>
                   </div>
                 </div>
               </div>
@@ -111,7 +111,7 @@ export default function Contact() {
 
             {/* Google fiche */}
             <a
-              href="https://www.google.com/maps/place/ECUREUIL+ELAG/@45.990789,1.452319,17z/data=!3m1!4b1!4m6!3m5!1s0x47f945b5766e1eed:0x6209f358cd77bed9!8m2!3d45.990789!4d1.452319!16s%2Fg%2F1tvw48yh?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
+              href="https://www.google.com/maps/place/Gaetan+espaces+verts/@49.1511952,0.6465913,17z/data=!3m1!4b1!4m6!3m5!1s0x47e1a703cb9c473d:0x49d21e51f212437a!8m2!3d49.1511952!4d0.6465913!16s%2Fg%2F11f54rdznp?entry=ttu&g_ep=EgoyMDI2MDQxNS4wIKXMDSoASAFQAw%3D%3D"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-4 rounded-2xl border border-accent/15 bg-white/5 px-6 py-5 hover:border-accent/40 hover:bg-accent/5 transition-all duration-200 group"
